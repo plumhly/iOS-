@@ -1,0 +1,559 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3823C7C5203FE61F003C081D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3823C7C4203FE61F003C081D /* AppDelegate.m */; };
+		3823C7C8203FE61F003C081D /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3823C7C7203FE61F003C081D /* ViewController.m */; };
+		3823C7CB203FE61F003C081D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3823C7C9203FE61F003C081D /* Main.storyboard */; };
+		3823C7CD203FE61F003C081D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3823C7CC203FE61F003C081D /* Assets.xcassets */; };
+		3823C7D0203FE61F003C081D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3823C7CE203FE61F003C081D /* LaunchScreen.storyboard */; };
+		3823C7D3203FE61F003C081D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3823C7D2203FE61F003C081D /* main.m */; };
+		3823C7DB203FE69E003C081D /* CanvasViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3823C7DA203FE69E003C081D /* CanvasViewController.m */; };
+		3823C7DE203FE6DB003C081D /* PaletteViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3823C7DD203FE6DB003C081D /* PaletteViewController.m */; };
+		3823C7E1203FE6F1003C081D /* ThumbnailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3823C7E0203FE6F1003C081D /* ThumbnailViewController.m */; };
+		3823C7E4203FEB48003C081D /* CoordinatingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3823C7E3203FEB48003C081D /* CoordinatingViewController.m */; };
+		3823C7E8203FF6AB003C081D /* Vertex.m in Sources */ = {isa = PBXBuildFile; fileRef = 3823C7E7203FF6AB003C081D /* Vertex.m */; };
+		3823C7EB203FF6C8003C081D /* Stroke.m in Sources */ = {isa = PBXBuildFile; fileRef = 3823C7EA203FF6C8003C081D /* Stroke.m */; };
+		3823C7EE203FF6D4003C081D /* Dot.m in Sources */ = {isa = PBXBuildFile; fileRef = 3823C7ED203FF6D4003C081D /* Dot.m */; };
+		3823C7F1203FFDB8003C081D /* ScribbleManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 3823C7F0203FFDB8003C081D /* ScribbleManager.m */; };
+		3823C7F4203FFDC4003C081D /* Scribble.m in Sources */ = {isa = PBXBuildFile; fileRef = 3823C7F3203FFDC4003C081D /* Scribble.m */; };
+		3823C7F7203FFDDB003C081D /* ScribbleMemento.m in Sources */ = {isa = PBXBuildFile; fileRef = 3823C7F6203FFDDB003C081D /* ScribbleMemento.m */; };
+		3823C7FA20400656003C081D /* ScribbleThumbnailProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3823C7F920400656003C081D /* ScribbleThumbnailProxy.m */; };
+		3823C7FD20400988003C081D /* SetStrokeColorCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = 3823C7FC20400988003C081D /* SetStrokeColorCommand.m */; };
+		3823C80020400993003C081D /* SetStrokeSizeCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = 3823C7FF20400993003C081D /* SetStrokeSizeCommand.m */; };
+		3823C80320413C11003C081D /* CanvasView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3823C80220413C11003C081D /* CanvasView.m */; };
+		3823C80620413C2C003C081D /* CanvasViewGenerator.m in Sources */ = {isa = PBXBuildFile; fileRef = 3823C80520413C2C003C081D /* CanvasViewGenerator.m */; };
+		3823C80920413D26003C081D /* PaperCanvasView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3823C80820413D26003C081D /* PaperCanvasView.m */; };
+		3823C80C20413D3C003C081D /* ClothCanvasView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3823C80B20413D3C003C081D /* ClothCanvasView.m */; };
+		3823C80F20413D6E003C081D /* PaperCanvasViewGenerator.m in Sources */ = {isa = PBXBuildFile; fileRef = 3823C80E20413D6E003C081D /* PaperCanvasViewGenerator.m */; };
+		3823C81220413D7E003C081D /* ClothCanvasViewGenerator.m in Sources */ = {isa = PBXBuildFile; fileRef = 3823C81120413D7E003C081D /* ClothCanvasViewGenerator.m */; };
+		3823C818204155F4003C081D /* BrandingFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 3823C817204155F4003C081D /* BrandingFactory.m */; };
+		3823C81B2041565B003C081D /* AcmeBrandingFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 3823C81A2041565B003C081D /* AcmeBrandingFactory.m */; };
+		3823C81E20415671003C081D /* SierraBrandingFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 3823C81D20415671003C081D /* SierraBrandingFactory.m */; };
+		3823C82120415C51003C081D /* AcmeView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3823C82020415C51003C081D /* AcmeView.m */; };
+		3823C82420415C62003C081D /* SierraView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3823C82320415C62003C081D /* SierraView.m */; };
+		3823C82720415C79003C081D /* AcmeButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 3823C82620415C79003C081D /* AcmeButton.m */; };
+		3823C82A20415C85003C081D /* SierraButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 3823C82920415C85003C081D /* SierraButton.m */; };
+		3823C82D20415C98003C081D /* AcmeToolbar.m in Sources */ = {isa = PBXBuildFile; fileRef = 3823C82C20415C98003C081D /* AcmeToolbar.m */; };
+		3823C83020415CA5003C081D /* SierraToolbar.m in Sources */ = {isa = PBXBuildFile; fileRef = 3823C82F20415CA5003C081D /* SierraToolbar.m */; };
+		3823C83320416C95003C081D /* 属性表.png in Resources */ = {isa = PBXBuildFile; fileRef = 3823C83220416C95003C081D /* 属性表.png */; };
+		3823C83620416D99003C081D /* ChasingGame.m in Sources */ = {isa = PBXBuildFile; fileRef = 3823C83520416D99003C081D /* ChasingGame.m */; };
+		3823C83920416DC3003C081D /* CharacterBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = 3823C83820416DC3003C081D /* CharacterBuilder.m */; };
+		3823C83C20416DDB003C081D /* StandardCharacterBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = 3823C83B20416DDB003C081D /* StandardCharacterBuilder.m */; };
+		3823C84020416E0F003C081D /* Character.m in Sources */ = {isa = PBXBuildFile; fileRef = 3823C83F20416E0F003C081D /* Character.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		3823C7C0203FE61F003C081D /* TouchPainter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TouchPainter.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3823C7C3203FE61F003C081D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		3823C7C4203FE61F003C081D /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		3823C7C6203FE61F003C081D /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		3823C7C7203FE61F003C081D /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		3823C7CA203FE61F003C081D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		3823C7CC203FE61F003C081D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3823C7CF203FE61F003C081D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		3823C7D1203FE61F003C081D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3823C7D2203FE61F003C081D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		3823C7D9203FE69E003C081D /* CanvasViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CanvasViewController.h; sourceTree = "<group>"; };
+		3823C7DA203FE69E003C081D /* CanvasViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CanvasViewController.m; sourceTree = "<group>"; };
+		3823C7DC203FE6DB003C081D /* PaletteViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PaletteViewController.h; sourceTree = "<group>"; };
+		3823C7DD203FE6DB003C081D /* PaletteViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PaletteViewController.m; sourceTree = "<group>"; };
+		3823C7DF203FE6F1003C081D /* ThumbnailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ThumbnailViewController.h; sourceTree = "<group>"; };
+		3823C7E0203FE6F1003C081D /* ThumbnailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ThumbnailViewController.m; sourceTree = "<group>"; };
+		3823C7E2203FEB48003C081D /* CoordinatingViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CoordinatingViewController.h; sourceTree = "<group>"; };
+		3823C7E3203FEB48003C081D /* CoordinatingViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CoordinatingViewController.m; sourceTree = "<group>"; };
+		3823C7E5203FF676003C081D /* Mark.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Mark.h; sourceTree = "<group>"; };
+		3823C7E6203FF6AB003C081D /* Vertex.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Vertex.h; sourceTree = "<group>"; };
+		3823C7E7203FF6AB003C081D /* Vertex.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Vertex.m; sourceTree = "<group>"; };
+		3823C7E9203FF6C8003C081D /* Stroke.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Stroke.h; sourceTree = "<group>"; };
+		3823C7EA203FF6C8003C081D /* Stroke.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Stroke.m; sourceTree = "<group>"; };
+		3823C7EC203FF6D4003C081D /* Dot.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Dot.h; sourceTree = "<group>"; };
+		3823C7ED203FF6D4003C081D /* Dot.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Dot.m; sourceTree = "<group>"; };
+		3823C7EF203FFDB8003C081D /* ScribbleManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ScribbleManager.h; sourceTree = "<group>"; };
+		3823C7F0203FFDB8003C081D /* ScribbleManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ScribbleManager.m; sourceTree = "<group>"; };
+		3823C7F2203FFDC4003C081D /* Scribble.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Scribble.h; sourceTree = "<group>"; };
+		3823C7F3203FFDC4003C081D /* Scribble.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Scribble.m; sourceTree = "<group>"; };
+		3823C7F5203FFDDB003C081D /* ScribbleMemento.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ScribbleMemento.h; sourceTree = "<group>"; };
+		3823C7F6203FFDDB003C081D /* ScribbleMemento.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ScribbleMemento.m; sourceTree = "<group>"; };
+		3823C7F820400656003C081D /* ScribbleThumbnailProxy.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ScribbleThumbnailProxy.h; sourceTree = "<group>"; };
+		3823C7F920400656003C081D /* ScribbleThumbnailProxy.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ScribbleThumbnailProxy.m; sourceTree = "<group>"; };
+		3823C7FB20400988003C081D /* SetStrokeColorCommand.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SetStrokeColorCommand.h; sourceTree = "<group>"; };
+		3823C7FC20400988003C081D /* SetStrokeColorCommand.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SetStrokeColorCommand.m; sourceTree = "<group>"; };
+		3823C7FE20400993003C081D /* SetStrokeSizeCommand.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SetStrokeSizeCommand.h; sourceTree = "<group>"; };
+		3823C7FF20400993003C081D /* SetStrokeSizeCommand.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SetStrokeSizeCommand.m; sourceTree = "<group>"; };
+		3823C80120413C11003C081D /* CanvasView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CanvasView.h; sourceTree = "<group>"; };
+		3823C80220413C11003C081D /* CanvasView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CanvasView.m; sourceTree = "<group>"; };
+		3823C80420413C2C003C081D /* CanvasViewGenerator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CanvasViewGenerator.h; sourceTree = "<group>"; };
+		3823C80520413C2C003C081D /* CanvasViewGenerator.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CanvasViewGenerator.m; sourceTree = "<group>"; };
+		3823C80720413D26003C081D /* PaperCanvasView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PaperCanvasView.h; sourceTree = "<group>"; };
+		3823C80820413D26003C081D /* PaperCanvasView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PaperCanvasView.m; sourceTree = "<group>"; };
+		3823C80A20413D3C003C081D /* ClothCanvasView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ClothCanvasView.h; sourceTree = "<group>"; };
+		3823C80B20413D3C003C081D /* ClothCanvasView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ClothCanvasView.m; sourceTree = "<group>"; };
+		3823C80D20413D6E003C081D /* PaperCanvasViewGenerator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PaperCanvasViewGenerator.h; sourceTree = "<group>"; };
+		3823C80E20413D6E003C081D /* PaperCanvasViewGenerator.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PaperCanvasViewGenerator.m; sourceTree = "<group>"; };
+		3823C81020413D7E003C081D /* ClothCanvasViewGenerator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ClothCanvasViewGenerator.h; sourceTree = "<group>"; };
+		3823C81120413D7E003C081D /* ClothCanvasViewGenerator.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ClothCanvasViewGenerator.m; sourceTree = "<group>"; };
+		3823C816204155F4003C081D /* BrandingFactory.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BrandingFactory.h; sourceTree = "<group>"; };
+		3823C817204155F4003C081D /* BrandingFactory.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BrandingFactory.m; sourceTree = "<group>"; };
+		3823C8192041565B003C081D /* AcmeBrandingFactory.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AcmeBrandingFactory.h; sourceTree = "<group>"; };
+		3823C81A2041565B003C081D /* AcmeBrandingFactory.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AcmeBrandingFactory.m; sourceTree = "<group>"; };
+		3823C81C20415671003C081D /* SierraBrandingFactory.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SierraBrandingFactory.h; sourceTree = "<group>"; };
+		3823C81D20415671003C081D /* SierraBrandingFactory.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SierraBrandingFactory.m; sourceTree = "<group>"; };
+		3823C81F20415C51003C081D /* AcmeView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AcmeView.h; sourceTree = "<group>"; };
+		3823C82020415C51003C081D /* AcmeView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AcmeView.m; sourceTree = "<group>"; };
+		3823C82220415C62003C081D /* SierraView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SierraView.h; sourceTree = "<group>"; };
+		3823C82320415C62003C081D /* SierraView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SierraView.m; sourceTree = "<group>"; };
+		3823C82520415C79003C081D /* AcmeButton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AcmeButton.h; sourceTree = "<group>"; };
+		3823C82620415C79003C081D /* AcmeButton.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AcmeButton.m; sourceTree = "<group>"; };
+		3823C82820415C85003C081D /* SierraButton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SierraButton.h; sourceTree = "<group>"; };
+		3823C82920415C85003C081D /* SierraButton.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SierraButton.m; sourceTree = "<group>"; };
+		3823C82B20415C98003C081D /* AcmeToolbar.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AcmeToolbar.h; sourceTree = "<group>"; };
+		3823C82C20415C98003C081D /* AcmeToolbar.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AcmeToolbar.m; sourceTree = "<group>"; };
+		3823C82E20415CA5003C081D /* SierraToolbar.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SierraToolbar.h; sourceTree = "<group>"; };
+		3823C82F20415CA5003C081D /* SierraToolbar.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SierraToolbar.m; sourceTree = "<group>"; };
+		3823C83220416C95003C081D /* 属性表.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "属性表.png"; sourceTree = "<group>"; };
+		3823C83420416D99003C081D /* ChasingGame.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ChasingGame.h; sourceTree = "<group>"; };
+		3823C83520416D99003C081D /* ChasingGame.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ChasingGame.m; sourceTree = "<group>"; };
+		3823C83720416DC3003C081D /* CharacterBuilder.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CharacterBuilder.h; sourceTree = "<group>"; };
+		3823C83820416DC3003C081D /* CharacterBuilder.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CharacterBuilder.m; sourceTree = "<group>"; };
+		3823C83A20416DDB003C081D /* StandardCharacterBuilder.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StandardCharacterBuilder.h; sourceTree = "<group>"; };
+		3823C83B20416DDB003C081D /* StandardCharacterBuilder.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StandardCharacterBuilder.m; sourceTree = "<group>"; };
+		3823C83E20416E0F003C081D /* Character.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Character.h; sourceTree = "<group>"; };
+		3823C83F20416E0F003C081D /* Character.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Character.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3823C7BD203FE61F003C081D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3823C7B7203FE61F003C081D = {
+			isa = PBXGroup;
+			children = (
+				3823C7C2203FE61F003C081D /* TouchPainter */,
+				3823C7C1203FE61F003C081D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		3823C7C1203FE61F003C081D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3823C7C0203FE61F003C081D /* TouchPainter.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3823C7C2203FE61F003C081D /* TouchPainter */ = {
+			isa = PBXGroup;
+			children = (
+				3823C7C3203FE61F003C081D /* AppDelegate.h */,
+				3823C7C4203FE61F003C081D /* AppDelegate.m */,
+				3823C7C6203FE61F003C081D /* ViewController.h */,
+				3823C7C7203FE61F003C081D /* ViewController.m */,
+				3823C7C9203FE61F003C081D /* Main.storyboard */,
+				3823C7CC203FE61F003C081D /* Assets.xcassets */,
+				3823C7CE203FE61F003C081D /* LaunchScreen.storyboard */,
+				3823C7D1203FE61F003C081D /* Info.plist */,
+				3823C7D2203FE61F003C081D /* main.m */,
+				3823C7D9203FE69E003C081D /* CanvasViewController.h */,
+				3823C7DA203FE69E003C081D /* CanvasViewController.m */,
+				3823C7DC203FE6DB003C081D /* PaletteViewController.h */,
+				3823C7DD203FE6DB003C081D /* PaletteViewController.m */,
+				3823C7DF203FE6F1003C081D /* ThumbnailViewController.h */,
+				3823C7E0203FE6F1003C081D /* ThumbnailViewController.m */,
+				3823C7E2203FEB48003C081D /* CoordinatingViewController.h */,
+				3823C7E3203FEB48003C081D /* CoordinatingViewController.m */,
+				3823C7E5203FF676003C081D /* Mark.h */,
+				3823C8142041558C003C081D /* 原型模式 */,
+				3823C7EF203FFDB8003C081D /* ScribbleManager.h */,
+				3823C7F0203FFDB8003C081D /* ScribbleManager.m */,
+				3823C7F2203FFDC4003C081D /* Scribble.h */,
+				3823C7F3203FFDC4003C081D /* Scribble.m */,
+				3823C7F5203FFDDB003C081D /* ScribbleMemento.h */,
+				3823C7F6203FFDDB003C081D /* ScribbleMemento.m */,
+				3823C7F820400656003C081D /* ScribbleThumbnailProxy.h */,
+				3823C7F920400656003C081D /* ScribbleThumbnailProxy.m */,
+				3823C7FB20400988003C081D /* SetStrokeColorCommand.h */,
+				3823C7FC20400988003C081D /* SetStrokeColorCommand.m */,
+				3823C7FE20400993003C081D /* SetStrokeSizeCommand.h */,
+				3823C7FF20400993003C081D /* SetStrokeSizeCommand.m */,
+				3823C81320415578003C081D /* 工厂方法 */,
+				3823C815204155DA003C081D /* 抽象工厂 */,
+				3823C83120416C52003C081D /* 生成器 */,
+			);
+			path = TouchPainter;
+			sourceTree = "<group>";
+		};
+		3823C81320415578003C081D /* 工厂方法 */ = {
+			isa = PBXGroup;
+			children = (
+				3823C80120413C11003C081D /* CanvasView.h */,
+				3823C80220413C11003C081D /* CanvasView.m */,
+				3823C80720413D26003C081D /* PaperCanvasView.h */,
+				3823C80820413D26003C081D /* PaperCanvasView.m */,
+				3823C80A20413D3C003C081D /* ClothCanvasView.h */,
+				3823C80B20413D3C003C081D /* ClothCanvasView.m */,
+				3823C80420413C2C003C081D /* CanvasViewGenerator.h */,
+				3823C80520413C2C003C081D /* CanvasViewGenerator.m */,
+				3823C80D20413D6E003C081D /* PaperCanvasViewGenerator.h */,
+				3823C80E20413D6E003C081D /* PaperCanvasViewGenerator.m */,
+				3823C81020413D7E003C081D /* ClothCanvasViewGenerator.h */,
+				3823C81120413D7E003C081D /* ClothCanvasViewGenerator.m */,
+			);
+			path = "工厂方法";
+			sourceTree = "<group>";
+		};
+		3823C8142041558C003C081D /* 原型模式 */ = {
+			isa = PBXGroup;
+			children = (
+				3823C7E6203FF6AB003C081D /* Vertex.h */,
+				3823C7E7203FF6AB003C081D /* Vertex.m */,
+				3823C7E9203FF6C8003C081D /* Stroke.h */,
+				3823C7EA203FF6C8003C081D /* Stroke.m */,
+				3823C7EC203FF6D4003C081D /* Dot.h */,
+				3823C7ED203FF6D4003C081D /* Dot.m */,
+			);
+			path = "原型模式";
+			sourceTree = "<group>";
+		};
+		3823C815204155DA003C081D /* 抽象工厂 */ = {
+			isa = PBXGroup;
+			children = (
+				3823C816204155F4003C081D /* BrandingFactory.h */,
+				3823C817204155F4003C081D /* BrandingFactory.m */,
+				3823C8192041565B003C081D /* AcmeBrandingFactory.h */,
+				3823C81A2041565B003C081D /* AcmeBrandingFactory.m */,
+				3823C81C20415671003C081D /* SierraBrandingFactory.h */,
+				3823C81D20415671003C081D /* SierraBrandingFactory.m */,
+				3823C81F20415C51003C081D /* AcmeView.h */,
+				3823C82020415C51003C081D /* AcmeView.m */,
+				3823C82220415C62003C081D /* SierraView.h */,
+				3823C82320415C62003C081D /* SierraView.m */,
+				3823C82520415C79003C081D /* AcmeButton.h */,
+				3823C82620415C79003C081D /* AcmeButton.m */,
+				3823C82820415C85003C081D /* SierraButton.h */,
+				3823C82920415C85003C081D /* SierraButton.m */,
+				3823C82B20415C98003C081D /* AcmeToolbar.h */,
+				3823C82C20415C98003C081D /* AcmeToolbar.m */,
+				3823C82E20415CA5003C081D /* SierraToolbar.h */,
+				3823C82F20415CA5003C081D /* SierraToolbar.m */,
+			);
+			path = "抽象工厂";
+			sourceTree = "<group>";
+		};
+		3823C83120416C52003C081D /* 生成器 */ = {
+			isa = PBXGroup;
+			children = (
+				3823C83220416C95003C081D /* 属性表.png */,
+				3823C83420416D99003C081D /* ChasingGame.h */,
+				3823C83520416D99003C081D /* ChasingGame.m */,
+				3823C83720416DC3003C081D /* CharacterBuilder.h */,
+				3823C83820416DC3003C081D /* CharacterBuilder.m */,
+				3823C83A20416DDB003C081D /* StandardCharacterBuilder.h */,
+				3823C83B20416DDB003C081D /* StandardCharacterBuilder.m */,
+				3823C83E20416E0F003C081D /* Character.h */,
+				3823C83F20416E0F003C081D /* Character.m */,
+			);
+			path = "生成器";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3823C7BF203FE61F003C081D /* TouchPainter */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3823C7D6203FE61F003C081D /* Build configuration list for PBXNativeTarget "TouchPainter" */;
+			buildPhases = (
+				3823C7BC203FE61F003C081D /* Sources */,
+				3823C7BD203FE61F003C081D /* Frameworks */,
+				3823C7BE203FE61F003C081D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TouchPainter;
+			productName = TouchPainter;
+			productReference = 3823C7C0203FE61F003C081D /* TouchPainter.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3823C7B8203FE61F003C081D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = plum;
+				TargetAttributes = {
+					3823C7BF203FE61F003C081D = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 3823C7BB203FE61F003C081D /* Build configuration list for PBXProject "TouchPainter" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3823C7B7203FE61F003C081D;
+			productRefGroup = 3823C7C1203FE61F003C081D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3823C7BF203FE61F003C081D /* TouchPainter */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3823C7BE203FE61F003C081D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3823C7D0203FE61F003C081D /* LaunchScreen.storyboard in Resources */,
+				3823C7CD203FE61F003C081D /* Assets.xcassets in Resources */,
+				3823C7CB203FE61F003C081D /* Main.storyboard in Resources */,
+				3823C83320416C95003C081D /* 属性表.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3823C7BC203FE61F003C081D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3823C7DB203FE69E003C081D /* CanvasViewController.m in Sources */,
+				3823C84020416E0F003C081D /* Character.m in Sources */,
+				3823C80320413C11003C081D /* CanvasView.m in Sources */,
+				3823C7F1203FFDB8003C081D /* ScribbleManager.m in Sources */,
+				3823C7E8203FF6AB003C081D /* Vertex.m in Sources */,
+				3823C7C8203FE61F003C081D /* ViewController.m in Sources */,
+				3823C83020415CA5003C081D /* SierraToolbar.m in Sources */,
+				3823C83C20416DDB003C081D /* StandardCharacterBuilder.m in Sources */,
+				3823C7EE203FF6D4003C081D /* Dot.m in Sources */,
+				3823C82420415C62003C081D /* SierraView.m in Sources */,
+				3823C7D3203FE61F003C081D /* main.m in Sources */,
+				3823C82A20415C85003C081D /* SierraButton.m in Sources */,
+				3823C7F7203FFDDB003C081D /* ScribbleMemento.m in Sources */,
+				3823C82720415C79003C081D /* AcmeButton.m in Sources */,
+				3823C7FA20400656003C081D /* ScribbleThumbnailProxy.m in Sources */,
+				3823C81220413D7E003C081D /* ClothCanvasViewGenerator.m in Sources */,
+				3823C80C20413D3C003C081D /* ClothCanvasView.m in Sources */,
+				3823C81B2041565B003C081D /* AcmeBrandingFactory.m in Sources */,
+				3823C7E1203FE6F1003C081D /* ThumbnailViewController.m in Sources */,
+				3823C80620413C2C003C081D /* CanvasViewGenerator.m in Sources */,
+				3823C81E20415671003C081D /* SierraBrandingFactory.m in Sources */,
+				3823C7FD20400988003C081D /* SetStrokeColorCommand.m in Sources */,
+				3823C7E4203FEB48003C081D /* CoordinatingViewController.m in Sources */,
+				3823C7C5203FE61F003C081D /* AppDelegate.m in Sources */,
+				3823C80920413D26003C081D /* PaperCanvasView.m in Sources */,
+				3823C7DE203FE6DB003C081D /* PaletteViewController.m in Sources */,
+				3823C7EB203FF6C8003C081D /* Stroke.m in Sources */,
+				3823C80F20413D6E003C081D /* PaperCanvasViewGenerator.m in Sources */,
+				3823C82D20415C98003C081D /* AcmeToolbar.m in Sources */,
+				3823C7F4203FFDC4003C081D /* Scribble.m in Sources */,
+				3823C818204155F4003C081D /* BrandingFactory.m in Sources */,
+				3823C82120415C51003C081D /* AcmeView.m in Sources */,
+				3823C80020400993003C081D /* SetStrokeSizeCommand.m in Sources */,
+				3823C83920416DC3003C081D /* CharacterBuilder.m in Sources */,
+				3823C83620416D99003C081D /* ChasingGame.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		3823C7C9203FE61F003C081D /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3823C7CA203FE61F003C081D /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		3823C7CE203FE61F003C081D /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3823C7CF203FE61F003C081D /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3823C7D4203FE61F003C081D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		3823C7D5203FE61F003C081D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3823C7D7203FE61F003C081D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = R86UW7Z2FX;
+				INFOPLIST_FILE = TouchPainter/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = df.TouchPainter;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		3823C7D8203FE61F003C081D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = R86UW7Z2FX;
+				INFOPLIST_FILE = TouchPainter/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = df.TouchPainter;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3823C7BB203FE61F003C081D /* Build configuration list for PBXProject "TouchPainter" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3823C7D4203FE61F003C081D /* Debug */,
+				3823C7D5203FE61F003C081D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3823C7D6203FE61F003C081D /* Build configuration list for PBXNativeTarget "TouchPainter" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3823C7D7203FE61F003C081D /* Debug */,
+				3823C7D8203FE61F003C081D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3823C7B8203FE61F003C081D /* Project object */;
+}
