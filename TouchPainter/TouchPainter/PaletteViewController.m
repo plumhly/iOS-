@@ -7,8 +7,15 @@
 //
 
 #import "PaletteViewController.h"
+#import "SetStrokeColorCommand.h"
+#import "CommandSlider.h"
 
-@interface PaletteViewController ()
+@interface PaletteViewController () <SetStrokeColorCommandDelegate>
+
+@property (nonatomic, strong) CommandSlider *redSlider;
+@property (nonatomic, strong) CommandSlider *greenSlider;
+@property (nonatomic, strong) CommandSlider *blueSlider;
+@property (nonatomic, weak) IBOutlet UIView *paletteView;
 
 @end
 
@@ -24,14 +31,20 @@
     // Dispose of any resources that can be recreated.
 }
 
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+- (IBAction)onCommandSliderValueChanged:(CommandSlider *)slider {
+    [slider.command execute];
 }
-*/
+
+#pragma mark - SetStrokeColorCommandDelegate
+
+- (void)command:(SetStrokeColorCommand *)command didRequestColorComponentsForRed:(CGFloat *)red green:(CGFloat *)green blue:(CGFloat *)blue {
+    *red = _redSlider.value;
+    *green = _greenSlider.value;
+    *blue = _blueSlider.value;
+}
+
+- (void)command:(SetStrokeColorCommand *)command didFinishColorUpdateWithColor:(UIColor *)color {
+    _paletteView.backgroundColor = color;
+}
 
 @end

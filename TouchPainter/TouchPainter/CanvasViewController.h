@@ -10,4 +10,6 @@
 
 @interface CanvasViewController : UIViewController
 
+@property (nonatomic, strong) UIColor *strokeColor;
+
 @end

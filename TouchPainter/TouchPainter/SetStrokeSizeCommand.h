@@ -7,7 +7,8 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "Command.h"
 
-@interface SetStrokeSizeCommand : NSObject
+@interface SetStrokeSizeCommand : Command
 
 @end

@@ -11,6 +11,7 @@
 
 @interface ChasingGame : NSObject
 
-
+- (Character *)createPlayer:(CharacterBuilder *)builder;
+- (Character *)createEnemy:(CharacterBuilder *)builder;
 
 @end
