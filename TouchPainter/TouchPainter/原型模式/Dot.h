@@ -17,5 +17,7 @@
 
 - (instancetype)copyWithZone:(NSZone *)zone;
 
+- (void)acceptMarkVisitor:(id<MarkVisitor>)visitor;
+
 
 @end

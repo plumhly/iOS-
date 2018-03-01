@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CanvasViewController">
+            <connections>
+                <outlet property="view" destination="iN0-l3-epB" id="r8F-Mq-8Cc"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hqc-4C-8vp">
+                    <rect key="frame" x="0.0" y="623" width="375" height="44"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                    <items>
+                        <barButtonItem style="plain" systemItem="flexibleSpace" id="XtB-Zm-BRp"/>
+                        <barButtonItem style="plain" systemItem="trash" id="LKE-RS-0XJ"/>
+                        <barButtonItem style="plain" systemItem="flexibleSpace" id="0U4-sQ-ETQ"/>
+                        <barButtonItem image="save.png" id="0KQ-eI-qic"/>
+                        <barButtonItem style="plain" systemItem="flexibleSpace" id="bLz-Ic-GfG"/>
+                        <barButtonItem image="open.png" id="fU4-sQ-d20"/>
+                        <barButtonItem style="plain" systemItem="flexibleSpace" id="NOX-zc-qxg"/>
+                        <barButtonItem tag="1" title="Item" image="palette.png" id="hA6-8k-VtH">
+                            <connections>
+                                <action selector="requestViewChangeByObject:" destination="OSH-ko-dmc" id="4wo-xb-dfR"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem style="plain" systemItem="flexibleSpace" id="60v-xm-3J2"/>
+                        <barButtonItem title="Item" image="undo.png" id="Gzm-i9-Egg"/>
+                        <barButtonItem style="plain" systemItem="flexibleSpace" id="dT2-97-E12"/>
+                        <barButtonItem title="Item" image="redo.png" id="5lb-Dm-Vbz"/>
+                        <barButtonItem style="plain" systemItem="flexibleSpace" id="PJD-Bf-PFi"/>
+                    </items>
+                </toolbar>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+        </view>
+        <customObject id="OSH-ko-dmc" customClass="CoordinatingViewController"/>
+    </objects>
+    <resources>
+        <image name="open.png" width="24" height="24"/>
+        <image name="palette.png" width="24" height="20"/>
+        <image name="redo.png" width="24" height="24"/>
+        <image name="save.png" width="24" height="24"/>
+        <image name="undo.png" width="24" height="24"/>
+    </resources>
+</document>

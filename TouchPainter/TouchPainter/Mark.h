@@ -8,6 +8,7 @@
 
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
+#import "MarkVisitor.h"
 
 @protocol Mark <NSObject>
 
@@ -21,5 +22,12 @@
 - (void)addMark:(id <Mark>)mark;
 - (void)removeMark:(id <Mark>)mark;
 - (id <Mark>)childMarkAtIndex:(NSUInteger)index;
+- (NSEnumerator *)enumerator;
+- (void)enumerateMarksUsingBlock:(void(^)(id<Mark> item, BOOL *stop))block;
+
+- (void)drawWithContext:(CGContextRef)context;
+
+//访问者
+- (void)acceptMarkVisitor:(id <MarkVisitor>)visitor;
 
 @end

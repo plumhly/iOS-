@@ -20,7 +20,10 @@
 - (void)addMark:(id <Mark>)mark;
 - (void)removeMark:(id <Mark>)mark;
 - (id <Mark>)childMarkAtIndex:(NSUInteger)index;
+- (NSEnumerator *)enumerator;
+- (void)acceptMarkVisitor:(id<MarkVisitor>)visitor;
 
+-(void)enumerateMarksUsingBlock:(void (^)(id<Mark>, BOOL *))block;
 - (instancetype)copyWithZone:(NSZone *)zone;
 
 @end

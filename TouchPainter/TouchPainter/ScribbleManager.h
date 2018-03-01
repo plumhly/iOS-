@@ -7,7 +7,15 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "Scribble.h"
+#import "ScribbleThumbnail.h"
+#import "ScribbleThumbnailProxy.h"
 
 @interface ScribbleManager : NSObject
 
+
+- (void)saveScribble:(Scribble *)scribble thumbnail:(UIImage *)image;
+- (NSInteger)numberOfScribbles;
+- (Scribble *)scribbleAtIndex:(NSInteger)index;
+- (ScribbleThumbnail *)scribbleThumbnailAtIndex:(NSInteger)index;
 @end

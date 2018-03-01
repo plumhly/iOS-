@@ -7,6 +7,7 @@
 //
 
 #import "Stroke.h"
+#import "MarkEnumerator+Private.h"
 
 @interface Stroke()
 @property (nonatomic, strong) NSMutableArray *children;
@@ -71,4 +72,39 @@
     return strokeCopy;
 }
 
+- (void)drawWithContext:(CGContextRef)context {
+    CGPoint location = self.localtion;
+    CGContextMoveToPoint(context, location.x, location.y);
+    for (id <Mark> mark in _children) {
+        [mark drawWithContext:context];
+    }
+    CGContextSetFillColorWithColor(context, _color.CGColor);
+    CGContextStrokePath(context);
+}
+
+- (void)acceptMarkVisitor:(id<MarkVisitor>)visitor {
+    //后序遍历
+    for (id <Mark> mark in _children) {
+        [mark acceptMarkVisitor:visitor];
+    }
+    [visitor visitStroke:self];
+}
+
+#pragma mark - Enumerator
+
+- (NSEnumerator *)enumerator {
+    return [[MarkEnumerator alloc] initWithMark:self];
+}
+
+
+- (void)enumerateMarksUsingBlock:(void (^_Nonnull)(id<Mark>, BOOL *))block {
+    BOOL stop = NO;
+    NSEnumerator *enumerator = [self enumerator];
+    for (id <Mark> item in enumerator) {
+        block(item, &stop);
+        if (stop) {
+            break;
+        }
+    }
+}
 @end

@@ -24,4 +24,15 @@
     return dotCopy;
 }
 
+- (void)drawWithContext:(CGContextRef)context {
+    CGRect rect = {self.localtion,_size,_size};
+    CGContextSetFillColorWithColor(context, _color.CGColor);
+    CGContextFillEllipseInRect(context, rect);
+}
+
+- (void)acceptMarkVisitor:(id<MarkVisitor>)visitor {
+    [visitor visitVertex:self];
+}
+
+
 @end

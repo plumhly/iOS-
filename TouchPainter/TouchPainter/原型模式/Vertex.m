@@ -34,4 +34,12 @@
     return nil;
 }
 
+- (void)drawWithContext:(CGContextRef)context {
+    CGContextAddLineToPoint(context, _localtion.x, _localtion.y);
+}
+
+- (void)acceptMarkVisitor:(id<MarkVisitor>)visitor {
+    [visitor visitVertex:self];
+}
+
 @end

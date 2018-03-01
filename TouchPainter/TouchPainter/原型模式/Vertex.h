@@ -18,9 +18,11 @@
 @property (nonatomic, strong, readonly) id <Mark> lastChild;
 
 - (instancetype)initWithLocaltion:(CGPoint)localtion;
+
 - (void)addMark:(id <Mark>)mark;
 - (void)removeMark:(id <Mark>)mark;
 - (id <Mark>)childMarkAtIndex:(NSUInteger)index;
+- (void)acceptMarkVisitor:(id<MarkVisitor>)visitor;
 
 - (instancetype)copyWithZone:(NSZone *)zone;
 
