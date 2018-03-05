@@ -12,6 +12,7 @@
 #import "Stroke.h"
 
 @interface CanvasViewController ()
+
 @property (nonatomic, assign) CGPoint startPoint;
 
 @end
@@ -97,5 +98,37 @@
         [_canvasView setNeedsFocusUpdate];
     }
 }
+
+#pragma mark - 命令模式 NSUndoManager
+
+- (NSInvocation *)drawScribbleInvocation {
+    NSMethodSignature *executeMethodSignature = [_scribble methodSignatureForSelector:@selector(addMark:shouldAddToPreviousMark:)];
+    NSInvocation *drawInvocation = [NSInvocation invocationWithMethodSignature:executeMethodSignature];
+    drawInvocation.target = _scribble;
+    drawInvocation.selector = @selector(addMark:shouldAddToPreviousMark:);
+    BOOL attachToPreviousMark = NO;
+    [drawInvocation setArgument:&attachToPreviousMark atIndex:3];
+    return drawInvocation;
+}
+
+- (NSInvocation *)undrawScribbleInvocation {
+    NSMethodSignature *unexecuteMethodSignature = [_scribble methodSignatureForSelector:@selector(removeMark:)];
+    NSInvocation *undrawInvocation = [NSInvocation invocationWithMethodSignature:unexecuteMethodSignature];
+    undrawInvocation.target = _scribble;
+    undrawInvocation.selector = @selector(removeMark:);
+    return undrawInvocation;
+}
+
+- (void)executeInvocation:(NSInvocation *)invocation withUndoInvocation:(NSInvocation *)undoInvocation {
+    [invocation retainArguments];
+    [[self.undoManager prepareWithInvocationTarget:self] unexecuteInvocation:undoInvocation withRedoInvocation:invocation];
+    [invocation invoke];
+}
+
+- (void)unexecuteInvocation:(NSInvocation *)invocation withRedoInvocation:(NSInvocation *)redoInvocation {
+    [[self.undoManager prepareWithInvocationTarget:self] executeInvocation:redoInvocation withUndoInvocation:invocation];
+    [invocation invoke];
+}
+
 
 @end

@@ -7,7 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "ScribbleThumbnailView.h"
 
-@interface ScribbleThumbnailProxy : UIView
+@interface ScribbleThumbnailViewImageProxy : ScribbleThumbnailView
 
 @end

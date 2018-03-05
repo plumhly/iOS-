@@ -9,7 +9,7 @@
 #import <Foundation/Foundation.h>
 #import "Scribble.h"
 #import "ScribbleThumbnail.h"
-#import "ScribbleThumbnailProxy.h"
+#import "ScribbleThumbnailViewImageProxy.h"
 
 @interface ScribbleManager : NSObject
 

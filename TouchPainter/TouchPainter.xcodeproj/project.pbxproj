@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3813CB96204D259D00482117 /* FlowerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3813CB95204D259D00482117 /* FlowerView.m */; };
+		3813CB99204D25D700482117 /* FlowerFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 3813CB98204D25D700482117 /* FlowerFactory.m */; };
+		3813CB9C204D2DAB00482117 /* FlowerClientViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3813CB9B204D2DAB00482117 /* FlowerClientViewController.m */; };
+		3813CB9F204D304A00482117 /* FlyweightView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3813CB9E204D304A00482117 /* FlyweightView.m */; };
+		3813CBA2204D46AF00482117 /* ScribbleThumbnailView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3813CBA1204D46AF00482117 /* ScribbleThumbnailView.m */; };
 		3823C7C5203FE61F003C081D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3823C7C4203FE61F003C081D /* AppDelegate.m */; };
 		3823C7C8203FE61F003C081D /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3823C7C7203FE61F003C081D /* ViewController.m */; };
 		3823C7CB203FE61F003C081D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3823C7C9203FE61F003C081D /* Main.storyboard */; };
@@ -23,7 +28,7 @@
 		3823C7F1203FFDB8003C081D /* ScribbleManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 3823C7F0203FFDB8003C081D /* ScribbleManager.m */; };
 		3823C7F4203FFDC4003C081D /* Scribble.m in Sources */ = {isa = PBXBuildFile; fileRef = 3823C7F3203FFDC4003C081D /* Scribble.m */; };
 		3823C7F7203FFDDB003C081D /* ScribbleMemento.m in Sources */ = {isa = PBXBuildFile; fileRef = 3823C7F6203FFDDB003C081D /* ScribbleMemento.m */; };
-		3823C7FA20400656003C081D /* ScribbleThumbnailProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3823C7F920400656003C081D /* ScribbleThumbnailProxy.m */; };
+		3823C7FA20400656003C081D /* ScribbleThumbnailViewImageProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3823C7F920400656003C081D /* ScribbleThumbnailViewImageProxy.m */; };
 		3823C7FD20400988003C081D /* SetStrokeColorCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = 3823C7FC20400988003C081D /* SetStrokeColorCommand.m */; };
 		3823C80020400993003C081D /* SetStrokeSizeCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = 3823C7FF20400993003C081D /* SetStrokeSizeCommand.m */; };
 		3823C80320413C11003C081D /* CanvasView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3823C80220413C11003C081D /* CanvasView.m */; };
@@ -91,6 +96,16 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3813CB94204D259D00482117 /* FlowerView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FlowerView.h; sourceTree = "<group>"; };
+		3813CB95204D259D00482117 /* FlowerView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FlowerView.m; sourceTree = "<group>"; };
+		3813CB97204D25D700482117 /* FlowerFactory.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FlowerFactory.h; sourceTree = "<group>"; };
+		3813CB98204D25D700482117 /* FlowerFactory.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FlowerFactory.m; sourceTree = "<group>"; };
+		3813CB9A204D2DAB00482117 /* FlowerClientViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FlowerClientViewController.h; sourceTree = "<group>"; };
+		3813CB9B204D2DAB00482117 /* FlowerClientViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FlowerClientViewController.m; sourceTree = "<group>"; };
+		3813CB9D204D304A00482117 /* FlyweightView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FlyweightView.h; sourceTree = "<group>"; };
+		3813CB9E204D304A00482117 /* FlyweightView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FlyweightView.m; sourceTree = "<group>"; };
+		3813CBA0204D46AF00482117 /* ScribbleThumbnailView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ScribbleThumbnailView.h; sourceTree = "<group>"; };
+		3813CBA1204D46AF00482117 /* ScribbleThumbnailView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ScribbleThumbnailView.m; sourceTree = "<group>"; };
 		3823C7C0203FE61F003C081D /* TouchPainter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TouchPainter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3823C7C3203FE61F003C081D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		3823C7C4203FE61F003C081D /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -122,8 +137,8 @@
 		3823C7F3203FFDC4003C081D /* Scribble.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Scribble.m; sourceTree = "<group>"; };
 		3823C7F5203FFDDB003C081D /* ScribbleMemento.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ScribbleMemento.h; sourceTree = "<group>"; };
 		3823C7F6203FFDDB003C081D /* ScribbleMemento.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ScribbleMemento.m; sourceTree = "<group>"; };
-		3823C7F820400656003C081D /* ScribbleThumbnailProxy.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ScribbleThumbnailProxy.h; sourceTree = "<group>"; };
-		3823C7F920400656003C081D /* ScribbleThumbnailProxy.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ScribbleThumbnailProxy.m; sourceTree = "<group>"; };
+		3823C7F820400656003C081D /* ScribbleThumbnailViewImageProxy.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ScribbleThumbnailViewImageProxy.h; sourceTree = "<group>"; };
+		3823C7F920400656003C081D /* ScribbleThumbnailViewImageProxy.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ScribbleThumbnailViewImageProxy.m; sourceTree = "<group>"; };
 		3823C7FB20400988003C081D /* SetStrokeColorCommand.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SetStrokeColorCommand.h; sourceTree = "<group>"; };
 		3823C7FC20400988003C081D /* SetStrokeColorCommand.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SetStrokeColorCommand.m; sourceTree = "<group>"; };
 		3823C7FE20400993003C081D /* SetStrokeSizeCommand.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SetStrokeSizeCommand.h; sourceTree = "<group>"; };
@@ -258,6 +273,21 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3813CB93204D257D00482117 /* 享元模式 */ = {
+			isa = PBXGroup;
+			children = (
+				3813CB94204D259D00482117 /* FlowerView.h */,
+				3813CB95204D259D00482117 /* FlowerView.m */,
+				3813CB97204D25D700482117 /* FlowerFactory.h */,
+				3813CB98204D25D700482117 /* FlowerFactory.m */,
+				3813CB9A204D2DAB00482117 /* FlowerClientViewController.h */,
+				3813CB9B204D2DAB00482117 /* FlowerClientViewController.m */,
+				3813CB9D204D304A00482117 /* FlyweightView.h */,
+				3813CB9E204D304A00482117 /* FlyweightView.m */,
+			);
+			path = "享元模式";
+			sourceTree = "<group>";
+		};
 		3823C7B7203FE61F003C081D = {
 			isa = PBXGroup;
 			children = (
@@ -287,6 +317,7 @@
 				3823C7CE203FE61F003C081D /* LaunchScreen.storyboard */,
 				3823C7D1203FE61F003C081D /* Info.plist */,
 				3823C7D2203FE61F003C081D /* main.m */,
+				3813CB93204D257D00482117 /* 享元模式 */,
 				38DFE2CB204939F6001E93D0 /* 模板方法 */,
 				38DFE2AF204929B9001E93D0 /* 责任链 */,
 				38D254BA2047E7D7001E0FB9 /* 装饰 */,
@@ -303,8 +334,10 @@
 				38BBA1B82044FF0800DD5845 /* ScribbleThumbnail.m */,
 				3823C7F5203FFDDB003C081D /* ScribbleMemento.h */,
 				3823C7F6203FFDDB003C081D /* ScribbleMemento.m */,
-				3823C7F820400656003C081D /* ScribbleThumbnailProxy.h */,
-				3823C7F920400656003C081D /* ScribbleThumbnailProxy.m */,
+				3813CBA0204D46AF00482117 /* ScribbleThumbnailView.h */,
+				3813CBA1204D46AF00482117 /* ScribbleThumbnailView.m */,
+				3823C7F820400656003C081D /* ScribbleThumbnailViewImageProxy.h */,
+				3823C7F920400656003C081D /* ScribbleThumbnailViewImageProxy.m */,
 				38B868B92043DEAA00785317 /* Command.h */,
 				38B868BA2043DEAA00785317 /* Command.m */,
 				3823C7FB20400988003C081D /* SetStrokeColorCommand.h */,
@@ -644,7 +677,8 @@
 				3823C82A20415C85003C081D /* SierraButton.m in Sources */,
 				3823C7F7203FFDDB003C081D /* ScribbleMemento.m in Sources */,
 				3823C82720415C79003C081D /* AcmeButton.m in Sources */,
-				3823C7FA20400656003C081D /* ScribbleThumbnailProxy.m in Sources */,
+				3813CB9C204D2DAB00482117 /* FlowerClientViewController.m in Sources */,
+				3823C7FA20400656003C081D /* ScribbleThumbnailViewImageProxy.m in Sources */,
 				3823C81220413D7E003C081D /* ClothCanvasViewGenerator.m in Sources */,
 				38DFE2D420493CAB001E93D0 /* Hamburger.m in Sources */,
 				38B868C82043FDFD00785317 /* GameBoyEmulator.m in Sources */,
@@ -653,11 +687,13 @@
 				38DFE2AB2048FDAE001E93D0 /* UIImage+Transform.m in Sources */,
 				38DFE2B520492A85001E93D0 /* Attack.m in Sources */,
 				3823C7E1203FE6F1003C081D /* ThumbnailViewController.m in Sources */,
+				3813CB96204D259D00482117 /* FlowerView.m in Sources */,
 				382A93852048F47A009B708B /* DecorateViewController.m in Sources */,
 				3823C80620413C2C003C081D /* CanvasViewGenerator.m in Sources */,
 				38B868CB2043FE1B00785317 /* GameGearEmulator.m in Sources */,
 				38DFE2C120492BA9001E93D0 /* CrystalShield.m in Sources */,
 				3823C81E20415671003C081D /* SierraBrandingFactory.m in Sources */,
+				3813CB99204D25D700482117 /* FlowerFactory.m in Sources */,
 				38DFE2B220492A23001E93D0 /* AttackHandler.m in Sources */,
 				3823C7FD20400988003C081D /* SetStrokeColorCommand.m in Sources */,
 				38B868BE2043E44300785317 /* CommandSlider.m in Sources */,
@@ -680,11 +716,13 @@
 				38DFE2BB20492ABE001E93D0 /* MagicFireAttack.m in Sources */,
 				3823C818204155F4003C081D /* BrandingFactory.m in Sources */,
 				38B868D12043FF5400785317 /* TouchConsoleController.m in Sources */,
+				3813CBA2204D46AF00482117 /* ScribbleThumbnailView.m in Sources */,
 				3823C82120415C51003C081D /* AcmeView.m in Sources */,
 				38DFE2C420492C27001E93D0 /* Avatar.m in Sources */,
 				382A93722047EACA009B708B /* UIImage+ImageComponent.m in Sources */,
 				3823C80020400993003C081D /* SetStrokeSizeCommand.m in Sources */,
 				3823C83920416DC3003C081D /* CharacterBuilder.m in Sources */,
+				3813CB9F204D304A00482117 /* FlyweightView.m in Sources */,
 				38BBA1B92044FF0800DD5845 /* ScribbleThumbnail.m in Sources */,
 				3823C83620416D99003C081D /* ChasingGame.m in Sources */,
 			);
