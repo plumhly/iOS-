@@ -10,4 +10,14 @@
 
 @implementation Command
 
+- (void)execute {
+    //抛出异常
+}
+
+- (void)undo {
+    //子类实现
+}
+
+
+
 @end

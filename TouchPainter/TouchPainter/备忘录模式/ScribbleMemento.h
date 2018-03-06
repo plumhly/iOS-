@@ -10,6 +10,8 @@
 
 @interface ScribbleMemento : NSObject
 
+
++ (ScribbleMemento *)mementoWithData:(NSData *)data;
 - (NSData *)data;
 
 @end

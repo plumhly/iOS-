@@ -35,4 +35,20 @@
 }
 
 
+#pragma mark - NSCoding
+
+- (instancetype)initWithCoder:(NSCoder *)aDecoder {
+    if (self = [super initWithCoder:aDecoder]) {
+        _color = [aDecoder decodeObjectForKey:@"DotColor"];
+        _size = [aDecoder decodeFloatForKey:@"DotSize"];
+    }
+    return self;
+}
+
+- (void)encodeWithCoder:(NSCoder *)aCoder {
+    [super encodeWithCoder:aCoder];
+    [aCoder encodeObject:_color forKey:@"DotColor"];
+    [aCoder encodeFloat:_size forKey:@"DotSize"];
+}
+
 @end

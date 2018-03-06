@@ -36,4 +36,16 @@
     return @"";
 }
 
+- (Scribble *)scribbleAtIndex:(NSInteger)index {
+    NSString *scribbleDataName = [NSString stringWithFormat:@"data_%ld", (long)index];
+    NSString *mementoPath = [[self scribbleDataPath] stringByAppendingPathComponent:scribbleDataName];
+    
+    NSFileManager *fileManager = [NSFileManager defaultManager];
+    
+    NSData *data = [fileManager contentsAtPath:mementoPath];
+    ScribbleMemento *scribbleMemento = [ScribbleMemento mementoWithData:data];
+    Scribble *scribble = [Scribble scribbleWithMement:scribbleMemento];
+    return scribble;
+}
+
 @end

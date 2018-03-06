@@ -10,10 +10,17 @@
 #import "CanvasViewGenerator.h"
 #import "Dot.h"
 #import "Stroke.h"
+#import "DrawScribbleCommand.h"
+#import "NSMutableArray+Stack.h"
+#import "CommandKey.h"
+
+#define LEVEL_UNDO 100
 
 @interface CanvasViewController ()
 
 @property (nonatomic, assign) CGPoint startPoint;
+@property (nonatomic, strong) NSMutableArray *undoStack;
+@property (nonatomic, strong) NSMutableArray *redoStack;
 
 @end
 
@@ -61,7 +68,23 @@
         id <Mark> newStroke = [Stroke new];
         newStroke.color = _strokeColor;
         newStroke.size = _strokeSize;
-        [_scribble addMark:newStroke shouldAddToPreviousMark:NO];
+//        [_scribble addMark:newStroke shouldAddToPreviousMark:NO];
+         /*使用 NSUndoManger
+        //命令
+        NSInvocation *drawInvocation = [self drawScribbleInvocation];
+        [drawInvocation setArgument:&newStroke atIndex:2];
+        
+        //撤销命令
+        NSInvocation *undrawInvocation = [self undrawScribbleInvocation];
+        [undrawInvocation setArgument:&newStroke atIndex:2];
+        
+        [self executeInvocation:drawInvocation withUndoInvocation:undrawInvocation];
+          */
+        //自定义命令
+        NSDictionary *userinfo = [NSDictionary dictionaryWithObjectsAndKeys:_scribble, ScribbleUserInfoKey, newStroke, MarkUserInfoKey, [NSNumber numberWithBool:NO], ShouldUserInfoKey, nil];
+        DrawScribbleCommand *command = [DrawScribbleCommand new];
+        command.userinfo = userinfo;
+        [self executeCommand:command prepareForUndo:YES];
     }
     
     CGPoint thisPoint = [[touches anyObject] locationInView:_canvasView];
@@ -76,7 +99,26 @@
         id <Mark> dot = [Dot new];
         dot.color = _strokeColor;
         dot.size = _strokeSize;
-        [_scribble addMark:dot shouldAddToPreviousMark:NO];
+//        [_scribble addMark:dot shouldAddToPreviousMark:NO];
+        
+        /*使用 NSUndoManger
+        //命令
+        NSInvocation *drawInvocation = [self drawScribbleInvocation];
+        [drawInvocation setArgument:&dot atIndex:2];
+
+        //撤销命令
+        NSInvocation *undrawInvocation = [self undrawScribbleInvocation];
+        [undrawInvocation setArgument:&dot atIndex:2];
+        
+        [self executeInvocation:drawInvocation withUndoInvocation:undrawInvocation];
+         */
+        
+        //自定义命令
+        NSDictionary *userinfo = [NSDictionary dictionaryWithObjectsAndKeys:_scribble, ScribbleUserInfoKey, dot, MarkUserInfoKey, [NSNumber numberWithBool:NO], ShouldUserInfoKey, nil];
+        DrawScribbleCommand *command = [DrawScribbleCommand new];
+        command.userinfo = userinfo;
+        [self executeCommand:command prepareForUndo:YES];
+        
     }
     
     _startPoint = CGPointZero;
@@ -130,5 +172,47 @@
     [invocation invoke];
 }
 
+#pragma mark - 自定义命令
+- (void)executeCommand:(Command *)command prepareForUndo:(BOOL)prepareForUndo {
+    if (prepareForUndo) {
+        if (!_undoStack) {
+            _undoStack = [NSMutableArray arrayWithCapacity:LEVEL_UNDO];
+        }
+        if (_undoStack.count == LEVEL_UNDO) {
+            [_undoStack dropBottom];
+        }
+        [_undoStack push:command];
+    }
+    [command execute];
+}
+
+- (void)undoCommand {
+    Command *command = [_undoStack pop];
+    [command undo];
+    if (_redoStack == nil) {
+        _redoStack = [NSMutableArray arrayWithCapacity:LEVEL_UNDO];
+    }
+    [_redoStack push:command];
+}
+
+- (void)redoCommand {
+    Command *command = [_redoStack pop];
+    [command execute];
+    [_undoStack push:command];
+}
+
+#pragma mark - Action
+- (IBAction)obBarButtonHit:(UIBarButtonItem *)sender {
+    if (sender.tag == 4) {
+//        [self.undoManager undo];
+        [self undoCommand];
+    }
+    
+    if (sender.tag == 5) {
+//        [self.undoManager redo];
+        [self redoCommand];
+    }
+        
+}
 
 @end

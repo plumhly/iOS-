@@ -18,6 +18,7 @@
 @property (nonatomic, strong) UIColor *strokeColor;
 @property (nonatomic, assign) CGFloat strokeSize;
 
+- (IBAction)obBarButtonHit:(UIBarButtonItem *)sender;
 
 
 @end

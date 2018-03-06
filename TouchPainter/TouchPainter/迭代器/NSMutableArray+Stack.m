@@ -23,4 +23,12 @@
     return object;
 }
 
+- (id)dropBottom {
+    id object = self.firstObject;
+    if (object) {
+        [self removeObjectAtIndex:0];
+    }
+    return object;
+}
+
 @end

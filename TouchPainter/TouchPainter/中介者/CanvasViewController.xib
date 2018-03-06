@@ -37,9 +37,17 @@
                             </connections>
                         </barButtonItem>
                         <barButtonItem style="plain" systemItem="flexibleSpace" id="60v-xm-3J2"/>
-                        <barButtonItem title="Item" image="undo.png" id="Gzm-i9-Egg"/>
+                        <barButtonItem title="Item" image="undo.png" id="Gzm-i9-Egg">
+                            <connections>
+                                <action selector="requestViewChangeByObject:" destination="OSH-ko-dmc" id="Rzu-4R-vfN"/>
+                            </connections>
+                        </barButtonItem>
                         <barButtonItem style="plain" systemItem="flexibleSpace" id="dT2-97-E12"/>
-                        <barButtonItem title="Item" image="redo.png" id="5lb-Dm-Vbz"/>
+                        <barButtonItem title="Item" image="redo.png" id="5lb-Dm-Vbz">
+                            <connections>
+                                <action selector="requestViewChangeByObject:" destination="OSH-ko-dmc" id="x5p-JM-1vx"/>
+                            </connections>
+                        </barButtonItem>
                         <barButtonItem style="plain" systemItem="flexibleSpace" id="PJD-Bf-PFi"/>
                     </items>
                 </toolbar>

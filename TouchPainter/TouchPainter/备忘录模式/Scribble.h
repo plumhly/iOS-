@@ -8,6 +8,7 @@
 
 #import <Foundation/Foundation.h>
 #import "ScribbleMemento.h"
+#import "ScribbleMemento.h"
 
 @protocol Mark;
 
@@ -15,9 +16,17 @@
 
 @property (nonatomic, strong, readonly) id <Mark> parentMark;
 
-- (ScribbleMemento *)scribbleMemento;
 
+//管理mark
 - (void)addMark:(id <Mark>)aMark shouldAddToPreviousMark:(BOOL)shouldAddToPreviousMark;
 - (void)removeMark:(id <Mark>)aMark;
+
+//备忘录用的方法
+- (instancetype)initWithMemento:(ScribbleMemento *)memento;
++ (instancetype)scribbleWithMement:(ScribbleMemento *)memento;
+- (ScribbleMemento *)scribbleMemento;
+- (ScribbleMemento *)scribbleMementoWithCompleteSnapthot:(BOOL)hasCompleteSnapshot;
+- (void)attachStateFromMemento:(ScribbleMemento *)memento;
+
 
 @end

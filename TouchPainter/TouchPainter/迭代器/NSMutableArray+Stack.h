@@ -14,4 +14,6 @@
 
 - (id)pop;
 
+- (id)dropBottom;
+
 @end

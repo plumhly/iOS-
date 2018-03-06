@@ -15,7 +15,9 @@
 typedef NS_ENUM(NSInteger, ButtonTag) {
     kButtontagDone,
     kButtontagOpenPaletteView,
-    kButtontagOpenThumbnailView
+    kButtontagOpenThumbnailView,
+    kButtontagUndo,
+    kButtontagRedo
 };
 
 
@@ -25,7 +27,7 @@ typedef NS_ENUM(NSInteger, ButtonTag) {
 @property (nonatomic, strong, readonly) UIViewController *activeViewController;
 
 + (instancetype)sharedInstance;
-- (IBAction)requestViewChangeByObject:(id)object;
+- (IBAction)requestViewChangeByObject:(UIBarButtonItem *)object;
 
 
 @end

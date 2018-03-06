@@ -42,4 +42,14 @@
     [visitor visitVertex:self];
 }
 
+
+#pragma mark - NSCoding
+
+- (instancetype)initWithCoder:(NSCoder *)aDecoder {
+    return self;
+}
+
+- (void)encodeWithCoder:(NSCoder *)aCoder {
+}
+
 @end

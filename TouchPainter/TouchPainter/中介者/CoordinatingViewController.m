@@ -24,7 +24,7 @@
     // Dispose of any resources that can be recreated.
 }
 
-- (IBAction)requestViewChangeByObject:(id)object {
+- (IBAction)requestViewChangeByObject:(UIBarButtonItem *)object {
     if ([object isKindOfClass:[UIBarButtonItem class]]) {
         switch ([object tag]) {
             case kButtontagOpenPaletteView:
@@ -40,6 +40,13 @@
                 ThumbnailViewController *thumbnailVC = [ThumbnailViewController new];
                 [_canvasViewController presentViewController:thumbnailVC animated:YES completion:nil];
                 _activeViewController = thumbnailVC;
+            }
+                break;
+                
+            case kButtontagUndo:
+            case kButtontagRedo:
+            {
+                [_canvasViewController obBarButtonHit:object];
             }
                 break;
             default:
