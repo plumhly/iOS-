@@ -65,6 +65,12 @@
 		38B868CB2043FE1B00785317 /* GameGearEmulator.m in Sources */ = {isa = PBXBuildFile; fileRef = 38B868CA2043FE1B00785317 /* GameGearEmulator.m */; };
 		38B868CE2043FEAD00785317 /* ConsoleController.m in Sources */ = {isa = PBXBuildFile; fileRef = 38B868CD2043FEAD00785317 /* ConsoleController.m */; };
 		38B868D12043FF5400785317 /* TouchConsoleController.m in Sources */ = {isa = PBXBuildFile; fileRef = 38B868D02043FF5400785317 /* TouchConsoleController.m */; };
+		38B9F332205C237000E8C25F /* InputValidator.m in Sources */ = {isa = PBXBuildFile; fileRef = 38B9F327205C237000E8C25F /* InputValidator.m */; };
+		38B9F333205C237000E8C25F /* StrategyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 38B9F328205C237000E8C25F /* StrategyViewController.m */; };
+		38B9F334205C237000E8C25F /* NumericInputValidator.m in Sources */ = {isa = PBXBuildFile; fileRef = 38B9F32E205C237000E8C25F /* NumericInputValidator.m */; };
+		38B9F335205C237000E8C25F /* CustomTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 38B9F32F205C237000E8C25F /* CustomTextField.m */; };
+		38B9F336205C237000E8C25F /* StrategyViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 38B9F330205C237000E8C25F /* StrategyViewController.xib */; };
+		38B9F337205C237000E8C25F /* AlphaInputValidator.m in Sources */ = {isa = PBXBuildFile; fileRef = 38B9F331205C237000E8C25F /* AlphaInputValidator.m */; };
 		38BBA1B92044FF0800DD5845 /* ScribbleThumbnail.m in Sources */ = {isa = PBXBuildFile; fileRef = 38BBA1B82044FF0800DD5845 /* ScribbleThumbnail.m */; };
 		38BBA1BC204530F100DD5845 /* CanvasViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 38BBA1BB204530F100DD5845 /* CanvasViewController.xib */; };
 		38BBA1CC204536B300DD5845 /* palette.png in Resources */ = {isa = PBXBuildFile; fileRef = 38BBA1C3204536B300DD5845 /* palette.png */; };
@@ -213,6 +219,17 @@
 		38B868CD2043FEAD00785317 /* ConsoleController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ConsoleController.m; sourceTree = "<group>"; };
 		38B868CF2043FF5400785317 /* TouchConsoleController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TouchConsoleController.h; sourceTree = "<group>"; };
 		38B868D02043FF5400785317 /* TouchConsoleController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TouchConsoleController.m; sourceTree = "<group>"; };
+		38B9F327205C237000E8C25F /* InputValidator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InputValidator.m; sourceTree = "<group>"; };
+		38B9F328205C237000E8C25F /* StrategyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StrategyViewController.m; sourceTree = "<group>"; };
+		38B9F329205C237000E8C25F /* CustomTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomTextField.h; sourceTree = "<group>"; };
+		38B9F32A205C237000E8C25F /* NumericInputValidator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NumericInputValidator.h; sourceTree = "<group>"; };
+		38B9F32B205C237000E8C25F /* AlphaInputValidator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AlphaInputValidator.h; sourceTree = "<group>"; };
+		38B9F32C205C237000E8C25F /* StrategyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StrategyViewController.h; sourceTree = "<group>"; };
+		38B9F32D205C237000E8C25F /* InputValidator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InputValidator.h; sourceTree = "<group>"; };
+		38B9F32E205C237000E8C25F /* NumericInputValidator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NumericInputValidator.m; sourceTree = "<group>"; };
+		38B9F32F205C237000E8C25F /* CustomTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomTextField.m; sourceTree = "<group>"; };
+		38B9F330205C237000E8C25F /* StrategyViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = StrategyViewController.xib; sourceTree = "<group>"; };
+		38B9F331205C237000E8C25F /* AlphaInputValidator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AlphaInputValidator.m; sourceTree = "<group>"; };
 		38BBA1B72044FF0800DD5845 /* ScribbleThumbnail.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ScribbleThumbnail.h; sourceTree = "<group>"; };
 		38BBA1B82044FF0800DD5845 /* ScribbleThumbnail.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ScribbleThumbnail.m; sourceTree = "<group>"; };
 		38BBA1BB204530F100DD5845 /* CanvasViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CanvasViewController.xib; sourceTree = "<group>"; };
@@ -314,6 +331,7 @@
 			children = (
 				38BBA1C2204536B300DD5845 /* Images */,
 				3823C7C3203FE61F003C081D /* AppDelegate.h */,
+				38B9F326205C237000E8C25F /* 策略模式 */,
 				3823C7C4203FE61F003C081D /* AppDelegate.m */,
 				3823C7C6203FE61F003C081D /* ViewController.h */,
 				3823C7C7203FE61F003C081D /* ViewController.m */,
@@ -452,6 +470,24 @@
 				38B868D02043FF5400785317 /* TouchConsoleController.m */,
 			);
 			path = "桥接器";
+			sourceTree = "<group>";
+		};
+		38B9F326205C237000E8C25F /* 策略模式 */ = {
+			isa = PBXGroup;
+			children = (
+				38B9F327205C237000E8C25F /* InputValidator.m */,
+				38B9F328205C237000E8C25F /* StrategyViewController.m */,
+				38B9F329205C237000E8C25F /* CustomTextField.h */,
+				38B9F32A205C237000E8C25F /* NumericInputValidator.h */,
+				38B9F32B205C237000E8C25F /* AlphaInputValidator.h */,
+				38B9F32C205C237000E8C25F /* StrategyViewController.h */,
+				38B9F32D205C237000E8C25F /* InputValidator.h */,
+				38B9F32E205C237000E8C25F /* NumericInputValidator.m */,
+				38B9F32F205C237000E8C25F /* CustomTextField.m */,
+				38B9F330205C237000E8C25F /* StrategyViewController.xib */,
+				38B9F331205C237000E8C25F /* AlphaInputValidator.m */,
+			);
+			path = "策略模式";
 			sourceTree = "<group>";
 		};
 		38BBA1BA20452D1100DD5845 /* 中介者 */ = {
@@ -667,6 +703,7 @@
 				38BBA1D2204536B300DD5845 /* background_texture.png in Resources */,
 				3823C83320416C95003C081D /* 属性表.png in Resources */,
 				38BBA1D4204536B300DD5845 /* save.png in Resources */,
+				38B9F336205C237000E8C25F /* StrategyViewController.xib in Resources */,
 				38BBA1BC204530F100DD5845 /* CanvasViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -686,6 +723,7 @@
 				38DFE2B820492AAA001E93D0 /* SwordAttack.m in Sources */,
 				3823C80320413C11003C081D /* CanvasView.m in Sources */,
 				3823C7F1203FFDB8003C081D /* ScribbleManager.m in Sources */,
+				38B9F337205C237000E8C25F /* AlphaInputValidator.m in Sources */,
 				38DFE2A82048FBF6001E93D0 /* UIImage+BaseFilter.m in Sources */,
 				3823C7E8203FF6AB003C081D /* Vertex.m in Sources */,
 				3823C7C8203FE61F003C081D /* ViewController.m in Sources */,
@@ -721,13 +759,16 @@
 				3823C81E20415671003C081D /* SierraBrandingFactory.m in Sources */,
 				3813CB99204D25D700482117 /* FlowerFactory.m in Sources */,
 				38DFE2B220492A23001E93D0 /* AttackHandler.m in Sources */,
+				38B9F334205C237000E8C25F /* NumericInputValidator.m in Sources */,
 				3823C7FD20400988003C081D /* SetStrokeColorCommand.m in Sources */,
 				38B868BE2043E44300785317 /* CommandSlider.m in Sources */,
+				38B9F335205C237000E8C25F /* CustomTextField.m in Sources */,
 				3823C7E4203FEB48003C081D /* CoordinatingViewController.m in Sources */,
 				3823C7C5203FE61F003C081D /* AppDelegate.m in Sources */,
 				3823C80920413D26003C081D /* PaperCanvasView.m in Sources */,
 				38DFE2CE20493A2C001E93D0 /* AnySandwich.m in Sources */,
 				382A937F2048EFE3009B708B /* ImageTransformFilter.m in Sources */,
+				38B9F333205C237000E8C25F /* StrategyViewController.m in Sources */,
 				38B868CE2043FEAD00785317 /* ConsoleController.m in Sources */,
 				3823C7DE203FE6DB003C081D /* PaletteViewController.m in Sources */,
 				3823C7EB203FF6C8003C081D /* Stroke.m in Sources */,
@@ -735,6 +776,7 @@
 				38DFE2D120493B60001E93D0 /* ReubenSandwich.m in Sources */,
 				3823C80F20413D6E003C081D /* PaperCanvasViewGenerator.m in Sources */,
 				38DFE2AE2048FE64001E93D0 /* UIImage+Shadow.m in Sources */,
+				38B9F332205C237000E8C25F /* InputValidator.m in Sources */,
 				3823C82D20415C98003C081D /* AcmeToolbar.m in Sources */,
 				384D0B2320479A7E005E89DE /* NSMutableArray+Stack.m in Sources */,
 				3823C7F4203FFDC4003C081D /* Scribble.m in Sources */,
